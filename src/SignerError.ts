@@ -1,4 +1,4 @@
-const REPOSITORY_URL = 'http://github.com/wavesplatform/signer';
+const REPOSITORY_URL = 'https://github.com/Decentral-America/signer';
 
 export const ERRORS = {
     SIGNER_OPTIONS: 1000 as 1000,

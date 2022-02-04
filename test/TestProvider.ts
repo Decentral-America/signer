@@ -15,7 +15,7 @@ import { TRANSACTION_TYPE } from '@decentralchain/waves-transactions/dist/transa
 export class TestProvider implements Provider {
     private options: ConnectOptions = {
         NETWORK_BYTE: NETWORK_BYTE,
-        NODE_URL: 'https://nodes.wavesnodes.com',
+        NODE_URL: 'https://mainnet-node.decentralchain.io',
     };
     private readonly seed: string;
     public readonly user: UserData;

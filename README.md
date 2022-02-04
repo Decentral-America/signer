@@ -185,7 +185,7 @@ Parameters:
 
 | Parameter | Default value | Description |
 | :--- | :--- | :--- |
-| NODE_URL | https://nodes.wavesnodes.com | Node that is used to access a blockchain |
+| NODE_URL | https://mainnet-node.decentralchain.io | Node that is used to access a blockchain |
 
 <!-- | MATCHER_URL | https://matcher.waves.exchange/ | Matcher that is used to serve orders | -->
 

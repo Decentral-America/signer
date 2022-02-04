@@ -241,7 +241,7 @@ export interface SignerOptions {
     /**
      * Урл ноды  с которой будет работать библиотека
      * Байт сети получаем из урла ноды (из последнего блока)
-     * @default https://nodes.wavesnodes.com
+     * @default https://mainnet-node.decentralchain.io
      */
     NODE_URL: string;
     /**
