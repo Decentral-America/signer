@@ -1,7 +1,7 @@
 import { NETWORK_BYTE, NODE_URL } from './test-env';
 import Signer from '../src/Signer';
 import { TestProvider } from './TestProvider';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 
 const seed = libs.crypto.randomSeed();
 const address = libs.crypto.address(seed, NETWORK_BYTE);
@@ -26,6 +26,6 @@ it('Get balances empty', async () => {
     await waves.login();
     const balances = await waves.getBalance();
     expect(balances.length).toBe(1);
-    expect(balances[0].assetId).toBe('WAVES');
+    expect(balances[0].assetId).toBe('DCC');
     expect(balances[0].amount).toBe('0');
 });

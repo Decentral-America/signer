@@ -191,7 +191,7 @@ export class Signer {
      * @param provider
      *
      * ```ts
-     * import Signer from '@waves/signer';
+     * import Signer from '@decentralchain/signer';
      * import Provider from '@waves/seed-provider';
      *
      * const waves = new Signer();
@@ -254,8 +254,8 @@ export class Signer {
                 this._options.NODE_URL,
                 this._userData!.address
             ).then((data) => ({
-                assetId: 'WAVES',
-                assetName: 'Waves',
+                assetId: 'DCC',
+                assetName: 'DCC',
                 decimals: 8,
                 amount: String(data.available),
                 isMyAsset: false,

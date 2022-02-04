@@ -49,13 +49,13 @@ Signer supports all browsers except Brave.
 * To install Signer library use
 
    ```bash
-   npm i @waves/signer
+   npm i @decentralchain/signer
    ```
 
 * To install ProviderSeed developed by Waves team, use
 
    ```bash
-   npm i @waves/provider-seed @waves/waves-transactions
+   npm i @waves/provider-seed @decentralchain/waves-transactions
    ```
 
 * To install ProviderWeb developed by Waves.Exchange, use
@@ -89,9 +89,9 @@ Add library initialization to your app.
 * For Testnet & ProviderSeed:
 
    ```js
-   import { Signer } from '@waves/signer';
+   import { Signer } from '@decentralchain/signer';
    import { ProviderSeed } from '@waves/provider-seed';
-   import { libs } from '@waves/waves-transactions';
+   import { libs } from '@decentralchain/waves-transactions';
 
    const seed = libs.crypto.randomSeed(15);
    const signer = new Signer({
@@ -104,7 +104,7 @@ Add library initialization to your app.
 * For Testnet & Waves.Exchange ProviderWeb:
 
    ```js
-   import { Signer } from '@waves/signer';
+   import { Signer } from '@decentralchain/signer';
    import { ProviderWeb } from '@waves.exchange/provider-web';
    
    const signer = new Signer({
@@ -117,7 +117,7 @@ Add library initialization to your app.
 * For Testnet & Waves.Exchange ProviderCloud:
 
    ```js
-   import { Signer } from '@waves/signer';
+   import { Signer } from '@decentralchain/signer';
    import { ProviderCloud } from '@waves.exchange/provider-cloud';
    
    const signer = new Signer({
@@ -130,7 +130,7 @@ Add library initialization to your app.
 * For Mainnet & Waves.Exchange ProviderWeb:
 
    ```js
-   import { Signer } from '@waves/signer';
+   import { Signer } from '@decentralchain/signer';
    import { ProviderWeb } from '@waves.exchange/provider-web';
    
    const signer = new Signer();
@@ -140,7 +140,7 @@ Add library initialization to your app.
 * For Mainnet & Waves.Exchange ProviderCloud:
 
    ```js
-   import { Signer } from '@waves/signer';
+   import { Signer } from '@decentralchain/signer';
    import { ProviderCloud } from '@waves.exchange/provider-cloud';
    
    const signer = new Signer();
@@ -294,8 +294,8 @@ const balances = await signer.getBalance();
 
 ```js
 [{
-  assetId: 'WAVES',
-  assetName: 'Waves',
+  assetId: 'DCC',
+  assetName: 'DCC',
   decimals: 8,
   amount: 100000000,
   isMyAsset: false,
