@@ -159,7 +159,7 @@ export const isValidAssetDescription = validatePipe(
 
 export const isAssetId = validatePipe(
     ifElse(
-        orEq(['', null, undefined, 'DCC']),
+        orEq(['', null, undefined, 'WAVES']),
         defaultTo(true),
         isString,
     ),
@@ -199,7 +199,7 @@ const orderScheme = {
 };
 
 const v12OrderScheme = {
-    matcherFeeAssetId: orEq([undefined, null, 'DCC']),
+    matcherFeeAssetId: orEq([undefined, null, 'WAVES']),
 };
 
 const v3OrderScheme = {
